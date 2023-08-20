@@ -1,5 +1,8 @@
-import Footer from '../reuseables/footer';
-import Navbar from '../reuseables/menuBar';
+// import Footer from '../reuseables/footer';
+// import Navbar from '../reuseables/menuBar';
+
+import Footer from "../reusables/footer";
+import Navbar from "../reusables/menuBar";
 
 const Register = () => {
     return(
@@ -48,7 +51,7 @@ const Register = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }
