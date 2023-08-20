@@ -1,0 +1,72 @@
+.navbars
+    background-color: #000
+    padding: 10px 20px
+    color: #fff
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+  
+    &__brand
+        font-size: 24px
+        font-weight: bold
+        text-decoration: none
+        margin-right: auto
+        color: #fff
+        &:hover
+          color: #fff
+    &--icon
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' strokeLinecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+    &--toggle
+        background: none
+        border: none
+        cursor: pointer
+        padding: 0
+        display: none
+        color: #fff
+    &--link
+        color: #fff
+        font-weight: 700
+        &:hover
+          color: #7fad39 
+
+
+@media (max-width: 767px) 
+  .navbars
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3)
+    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3)
+    -webkit-transition: all 0.3s ease
+    -moz-transition: all 0.3s ease
+    -o-transition: all 0.3s ease
+    transition: all 0.3s ease
+    border-top: none
+    &--toggle
+      display: flex
+      transition: all ease-in-out 1s
+    &__nav 
+      display: none
+  
+    &__show 
+      display: block
+      position: absolute
+      z-index: 4444
+      top: 40px
+      left: 0
+      width: 40%
+      height: 100vh
+      background-color: #333
+      padding: 20px
+
+    & .nav-item 
+      margin-bottom: 10px
+    & .nav-link
+      color: #ccc
+      text-decoration: none
+      display: block
+  
+
+
+
+  .showSidebar .nav-link 
+    color: #fff
+    text-decoration: none
+    display: block
+  
