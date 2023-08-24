@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import drone from '../../public/images/drone5.png'
 
-const Banner = () =>{
+const Hero = () =>{
     return(
         <>
           
@@ -21,7 +21,6 @@ const Banner = () =>{
             <button className="banner__texts--btn">Order Now</button>
             </div>
             <div className="w-50  banner__image">
-              {/* <img src="/images/drone5.png" className="img-fluid banner__image--img"/> */}
               <Image
                 src={drone}
                 alt="Drone"
@@ -34,4 +33,4 @@ const Banner = () =>{
         </>
     )
 }
-export default Banner
+export default Hero;

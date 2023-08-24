@@ -1,16 +1,19 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Navbar from './reusables/menuBar'
-import Banner from './home/hero'
 import Services from './services'
 import Footer from './reusables/footer'
+
+import Header from './reusables/header'
+import Banner from './home/banner'
+import Products from './products'
 
 
 export default function Home() {
   return (
     <>
-     <Navbar />
+ 
+     <Header />
      <Banner />
+      <Products />
      <Services />
      <Footer />
     </>

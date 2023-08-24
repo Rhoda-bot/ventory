@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "category_id": 1,
+        "name": "Drones",
+        "slug": "drone",
+        "image": "/images/drone1.jpg"
+    },
+    {
+        "id": 2,
+        "category_id": 1,
+        "name": "Drones",
+        "slug": "drone",
+        "image": "/images/drone2.jpg"
+    }
+    ,
+    {
+        "id": 3,
+        "category_id": 2,
+        "name": "Batteries",
+        "slug": "batteries",
+        "image": "/images/batery2.png"
+    }
+]

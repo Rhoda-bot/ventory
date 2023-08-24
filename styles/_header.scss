@@ -1,0 +1,18 @@
+.header{
+    background-color: transparent;
+
+    width: 100%;
+    z-index: 2;
+    &--image {
+        width: 6rem;
+    }
+    &__menu {
+        &--link {
+            font-weight: 700;
+            &:hover{
+                color: $secondary-color;
+            }
+        }
+    }
+
+    }

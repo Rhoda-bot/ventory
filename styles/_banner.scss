@@ -1,0 +1,32 @@
+.banner{
+    text-align: center;
+    &__row{
+        background-color: #f8f9fa;
+    }
+    &__col{
+        &--title{
+            margin-bottom: 1rem;
+            color: $secondary-color;
+        }
+        &--subtitle{
+            font-weight: 900;
+        }
+        &--btn{
+            padding: .5rem 2rem ;
+            border: 2px solid $secondary-color;
+            background-color: $secondary-color;
+            font-weight: 600;
+            color: $primary-color;
+            &:hover{
+                background-color: transparent;
+                color: $bg-dark;
+                border: 2px solid $secondary-color;
+            }
+        }
+    }
+    &__image{
+        background-image: url('/images/drone5.png');
+        background-size: cover;
+        object-fit: cover;
+    }
+}

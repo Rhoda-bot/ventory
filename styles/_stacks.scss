@@ -1,0 +1,19 @@
+.stacks{
+background-color: #101113;
+    &__col{
+        position: relative;
+        &--image{
+            height: auto;
+            display: block;
+        }
+        &--icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+          }
+    }
+}

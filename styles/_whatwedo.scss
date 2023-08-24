@@ -1,0 +1,40 @@
+.whatwedo{
+    background-color: $secondary-color;
+    height: calc(100vh - 72px);
+    &--title{
+        color: $secondary-color;
+        margin-top: -250px;
+        margin-bottom: 5rem;
+    }
+    &--subtitle{
+        color: $primary-color;
+        margin-top: -230px;
+        margin-bottom: 5rem;
+    }
+    &__row{  
+        position: relative; 
+        width: 100%;
+        &--overlay{
+            position: absolute;
+            // top: 0;
+            left: 2%;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 1;
+        }
+        &--video{
+            height: 80vh;
+            width: 100%;
+            left: 20px;
+            transform: translate(0, 20%);
+            // transform: translate(2.8%, 20%);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.95);
+            margin-top: -270px;
+            background-image: url('/images/video.jpg');
+            background-size: cover;
+            position: relative;
+        }
+    }
+}

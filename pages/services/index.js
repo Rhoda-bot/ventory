@@ -4,12 +4,13 @@ import icon2 from '../../public/images/icon-service-2.png'
 import icon3 from '../../public/images/icon-service-3.png'
 import icon4 from '../../public/images/icon-service-4.png'
 import Profession from './profession'
+
 const Services = () =>{
     return(
         <>
             <div className="services py-5">
-                <div className="container py-5">
-                    <div className="row justify-content-flex">
+                <div className="container py-5 mb-5">
+                    <div className="row justify-content-flex mb-5 pb-4">
                         <div className="col-md-6 services__texts">
                             <h1 className="services__texts--title mb-4">
                             Sed feugiat sit non dignissim. <span className="banner__texts-title" style={{
@@ -59,7 +60,9 @@ const Services = () =>{
                             </div>
                         </div>
                     </div>
-                    <Profession />
+                    <div className='row py-5 '>
+                        <Profession />
+                    </div>
                 </div>
             </div>
         </>
