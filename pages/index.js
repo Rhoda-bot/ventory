@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Services from './services'
 import Footer from './reusables/footer'
 
 import Header from './reusables/header'
@@ -14,7 +13,6 @@ export default function Home() {
      <Header />
      <Banner />
       <Products />
-     <Services />
      <Footer />
     </>
   )

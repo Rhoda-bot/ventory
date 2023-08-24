@@ -1,10 +1,5 @@
 [
     {
-        "id": 0,
-        "name": "All",
-        "slug": "all"
-    },
-    {
         "id": 1,
         "name": "Drones",
         "slug": "drone"

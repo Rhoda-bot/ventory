@@ -55,27 +55,27 @@ const Banner = () => {
                     </div>
                     <div className=" col-md-9 banner__image"></div>
                 </div>
-                <div className="row">
+                <div className="row pt-5">
             
                 <Slider {...settings}>
                     <div>
-                        <Image src={censor} className='img-fluid'/>
+                        <Image src={censor} alt='image' className='img-fluid'/>
                     </div>
                     <div>
-                        <Image src={drone1} className='img-fluid'/>
+                        <Image src={drone1} alt='image' className='img-fluid'/>
             
                     </div>
                     <div>
-                    <Image src={battery2} className='img-fluid'/>
+                    <Image src={battery2} alt='image' className='img-fluid'/>
                     </div>
                     <div>
-                    <Image src={dronekit2} className='img-fluid'/>
+                    <Image src={dronekit2} alt='image' className='img-fluid'/>
                     </div>
                     <div>
-                    <Image src={drone2} className='img-fluid'/>
+                    <Image src={drone2 }  alt='image'className='img-fluid'/>
                     </div>
                     <div>
-                    <Image src={battery} className='img-fluid'/>
+                    <Image src={battery} alt='image' className='img-fluid'/>
                     </div>
                 </Slider>
                 </div>

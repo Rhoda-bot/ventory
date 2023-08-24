@@ -2,14 +2,14 @@
     {
         "id": 1,
         "category_id": 1,
-        "name": "Drones",
+        "name": "Drone",
         "slug": "drone",
         "image": "/images/drone1.jpg"
     },
     {
         "id": 2,
         "category_id": 1,
-        "name": "Drones",
+        "name": "Drone",
         "slug": "drone",
         "image": "/images/drone2.jpg"
     }
@@ -17,8 +17,22 @@
     {
         "id": 3,
         "category_id": 2,
-        "name": "Batteries",
+        "name": "Battery",
         "slug": "batteries",
         "image": "/images/batery2.png"
+    },
+    {
+        "id": 4,
+        "category_id": 4,
+        "name": "Stem",
+        "slug": "stems",
+        "image": "/images/stem.jpg"
+    },
+    {
+        "id": 5,
+        "category_id": 3,
+        "name": "Censor",
+        "slug": "censors",
+        "image": "/images/censor.jpg"
     }
 ]
