@@ -21,16 +21,16 @@ const Products = () => {
             <div className="products py-5 text-center">
                 <div className="container py-5">
                     <div className="row">
-                        <h1>Featured Products</h1>
-                        <ul className='nav justify-content-center'>
+                        <h1 className='products--title'>Featured Products</h1>
+                        <ul className='nav justify-content-center products__menu'>
                             <li className=' nav-item mx-3'>
-                               <button onClick={ handleShowAllProducts } className='nav-link'>All</button>
+                               <button onClick={ handleShowAllProducts } className='nav-link products__menu--link'>All</button>
                             </li>
                         {
                             products && products.map((val)=> (
                                 <>
                                     <li className=' nav-item mx-3' key={val.id}>
-                                        <button href="#" className='nav-link' key={val.id}  onClick={() => handleProductLists(val.slug)}>{val.name}</button>
+                                        <button href="#" className='nav-link products__menu--link' key={val.id}  onClick={() => handleProductLists(val.slug)}>{val.name}</button>
                                     </li>
                                 </>
                             ))
@@ -44,6 +44,7 @@ const Products = () => {
                                         <div key={id}>
                                             <img src={image} className='img-fluid'/>
                                             <h3>{name}</h3>
+                                            <p>lorem</p>
                                         </div>
                                     </div>
                                     </>

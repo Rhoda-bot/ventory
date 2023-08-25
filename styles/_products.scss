@@ -1,0 +1,42 @@
+.products{
+    overflow-x: hidden;
+    &--title{
+        font-weight: 700;
+    }
+    &__menu{
+        &--link{
+            font-weight: 500;
+            color: $bg-dark;
+            &:active{
+                color: $secondary-color !important;
+                border-bottom: 2px solid $secondary-color;
+            }
+        }
+    }
+    &__col{
+        border-radius: 0;
+        &--title{
+            font-weight: 600;
+            color: $bg-dark;
+        }
+        &--btn{
+            border: 2px solid red;
+            background-color: red;
+            padding: .3rem 1.2rem;
+            color: $primary-color;
+            font-weight: 600;
+        }
+        &--image{
+            background-image: url('/images/drone5.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        &--image2{
+            background-image: url('/images/batery2.png');
+            background-size: contain;
+            object-fit: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}
