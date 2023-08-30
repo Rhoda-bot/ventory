@@ -45,7 +45,7 @@ const ShopItems = () => {
                                         <div className="card p-2 border-0 products__description">
                                              <img src={image} className="rounded"/>
                                                 <div className="">
-                                            <span  >Price: 00</span>
+                                            <span  >Price: $00</span>
                                             </div>
                                         </div>
                                        </Link>
