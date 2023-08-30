@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Toolbar = () => {
     return(
         <>
@@ -10,12 +12,12 @@ const Toolbar = () => {
                           <i className="fa fa-bars pe-1 mx-2"/>  All categories
                         </button>
                         <ul className="dropdown-menu rounded-0 w-100">
-                            <li><a className="dropdown-item" href="/">All Products</a></li>
-                            <li><a className="dropdown-item" href="/shop/drones">Drones</a></li>
-                            <li><a className="dropdown-item" href="/shop/stems">Stems</a></li>
-                            <li><a className="dropdown-item" href="/shop/drone-kits">Drone kits</a></li>
-                            <li><a className="dropdown-item" href="/shop/batteries">Batteries</a></li>
-                            <li><a className="dropdown-item" href="/shop/power-supply">Power supply</a></li>
+                            <li><Link className="dropdown-item" href="/">All Products</Link></li>
+                            <li><Link className="dropdown-item" href="/shop/drones">Drones</Link></li>
+                            <li><Link className="dropdown-item" href="/shop/stems">Stems</Link></li>
+                            <li><Link className="dropdown-item" href="/shop/drone-kits">Drone kits</Link></li>
+                            <li><Link className="dropdown-item" href="/shop/batteries">Batteries</Link></li>
+                            <li><Link className="dropdown-item" href="/shop/power-supply">Power supply</Link></li>
                         </ul>
                         </div>
                         </div>
