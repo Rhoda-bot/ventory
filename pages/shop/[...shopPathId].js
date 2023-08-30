@@ -8,7 +8,7 @@ import Footer from "../reusables/footer";
 const ShopItems = () => {
     const router = useRouter();
     const {shopPathId} = router.query;
-    const [allProducts, setAllProducts] = useState(productData);
+    const [allProducts] = useState(productData);
 
     console.log(shopPathId);
     return(
