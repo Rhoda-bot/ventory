@@ -10,7 +10,8 @@ const ShopItems = () => {
     const {shopPathId} = router.query;
     const [allProducts] = useState(productData);
 
-    console.log(shopPathId);
+    const indexOne = 0;
+    const indexTwo = 1;
     return(
         <>
             <Header />
@@ -19,7 +20,7 @@ const ShopItems = () => {
                 <div className="container">
                     <div className="row">
                         {
-                            allProducts.filter((val) => (val.id == shopPathId[1])).map(({id, image, name}) => (
+                            allProducts.filter((val) => (val.id == shopPathId[indexTwo])).map(({id, image, name}) => (
                                 <>
                                     <div className="col-md-7 " key={id}>
                                         <div className="card border-0" style={{
@@ -38,12 +39,12 @@ const ShopItems = () => {
                     <div className="row mt-4  py-5">
                          <h1>Other Similar Products</h1>
                     {
-                            allProducts.filter(({id,slug}) => (slug == shopPathId[0])).map(({id, image, name}) => (
+                            allProducts.filter(({id,slug}) => (slug == shopPathId[indexOne])).map(({id, image, name}) => (
                                 <>
                                     <div className="col-sm-6 col-md-3 col-lg-4 p-3" key={id}>
                                        <Link href={`/shop/${shopPathId[0]}/${id}`}>
                                         <div className="card p-2 border-0 products__description">
-                                             <img src={image} className="rounded"/>
+                                             <img src={image} className="rounded" alt="image"/>
                                                 <div className="">
                                             <span  >Price: $00</span>
                                             </div>

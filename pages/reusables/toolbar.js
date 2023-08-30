@@ -23,7 +23,7 @@ const Toolbar = () => {
                         </div>
                         <div className="col-md-6 p-2">
                         <div className="input-group mb-3">
-                            <input type="text" className="form-control rounded-0 shadow-none" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                            <input type="text" className="form-control rounded-0 shadow-none toolbar__input" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" />
                             <button className="banner__col--btn" type="button" id="button-addon2">Search</button>
                             </div>
                         </div>

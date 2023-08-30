@@ -24,7 +24,7 @@ const ShopProducts = () => {
                                     <div className="col-md-3 col-lg-4 p-3" key={id}>
                                        <Link href={`/shop/${shopPath}/${id}`}>
                                         <div className="card p-2">
-                                             <img src={image} className="rounded"/>
+                                             <img src={image} className="rounded" alt="image"/>
                                                 <div className="text-center">
                                             <span>{name}</span>
                                             </div>

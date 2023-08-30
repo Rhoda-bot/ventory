@@ -45,7 +45,7 @@ const Products = () => {
                                         <Link href={linkUrl}>
                                             <div className='card border-0 products__description'>
                                                 <div key={id}>
-                                                    <img src={imageUrl} className='img-fluid'/>
+                                                    <img src={imageUrl} className='img-fluid' alt='image'/>
                                                     <div className='card-body products__description--text'>
                             
                                                         <h3>{title}</h3>
