@@ -42,7 +42,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/about" className="nav-link fw-25 px-3 navbars--link">
+            <Link href="/shop" className="nav-link fw-25 px-3 navbars--link">
               SHOP
             </Link>
           </li>

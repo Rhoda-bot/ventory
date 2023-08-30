@@ -1,0 +1,45 @@
+ [
+    {
+        "title": "drones",
+        "imageUrl": "/images/drone2.jpg",
+        "id": 1,
+        "slug": "drones",
+        "linkUrl": "shop/drones"
+
+    },
+    {
+        "title": "batteries",
+        "imageUrl": "/images/batery2.png",
+        "id": 2,
+        "slug": "batteries",
+        "linkUrl": "shop/batteries"
+    },
+    {
+        "title": "censors",
+        "imageUrl": "/images/censor.jpg", 
+        "id": 3,
+        "slug": "censors",
+        "linkUrl": "shop/censors"
+    },
+    {
+        "title": "stems",
+        "imageUrl": "/images/stem.jpg",
+        "id": 4,
+        "slug": "stems",
+        "linkUrl": "shop/stems"
+    },
+    {
+        "title": "drone-kits",
+        "imageUrl": "/images/boardss/b-2.jpg", 
+        "id": 5,
+        "slug": "drone-kits",
+        "linkUrl": "shop/drone-kits"
+    },
+    {
+        "title": "boards",
+        "imageUrl": "/images/board/board-2.jpg", 
+        "id": 5,
+        "slug": "boards",
+        "linkUrl": "shop/boards"
+    }
+]

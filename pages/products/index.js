@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import productData from '../utility/products.json'
-import productListData from '../utility/product_list.json'
+import productListData from '../utility/section_data.json'
 import Link  from 'next/link'
+import Footer from '../reusables/footer';
 const Products = () => {
 
     const [products, setProducts] = useState(productData);
@@ -19,7 +20,7 @@ const Products = () => {
     return (
         <>
             <div className="products py-5 text-center">
-                <div className="container py-5">
+                <div className="container">
                     <div className="row">
                         <h1 className='products--title'>Featured Products</h1>
                         <ul className='nav justify-content-center products__menu'>
@@ -38,14 +39,21 @@ const Products = () => {
                         </ul>
                       <div className='row'>
                             {
-                                allProducts && allProducts.map(({id,name,image})=> (
+                                allProducts && allProducts.map(({id,title,imageUrl,linkUrl})=> (
                                     <>
-                                    <div className='col-md-3'>
-                                        <div key={id}>
-                                            <img src={image} className='img-fluid'/>
-                                            <h3>{name}</h3>
-                                            <p>lorem</p>
-                                        </div>
+                                    <div className=' col-md-3 col-lg-4 p-3' key={id}>
+                                        <Link href={linkUrl}>
+                                            <div className='card border-0 products__description'>
+                                                <div key={id}>
+                                                    <img src={imageUrl} className='img-fluid'/>
+                                                    <div className='card-body products__description--text'>
+                            
+                                                        <h3>{title}</h3>
+                                                        <p>lorem</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </Link>
                                     </div>
                                     </>
                                 ))
@@ -54,6 +62,7 @@ const Products = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

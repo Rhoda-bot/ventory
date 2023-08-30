@@ -3,15 +3,17 @@
         "id": 1,
         "category_id": 1,
         "name": "Drone",
-        "slug": "drone",
-        "image": "/images/drone1.jpg"
+        "slug": "drones",
+        "image": "/images/drone1.jpg",
+        "linkUrl": "/shop/drones"
     },
     {
         "id": 2,
         "category_id": 1,
         "name": "Drone",
-        "slug": "drone",
-        "image": "/images/drone2.jpg"
+        "slug": "drones",
+        "image": "/images/drone2.jpg",
+        "linkUrl": "/shop/drones"
     }
     ,
     {
@@ -19,20 +21,105 @@
         "category_id": 2,
         "name": "Battery",
         "slug": "batteries",
-        "image": "/images/batery2.png"
+        "image": "/images/batery2.png",
+        "linkUrl": "shop/batteries"
     },
     {
         "id": 4,
         "category_id": 4,
         "name": "Stem",
         "slug": "stems",
-        "image": "/images/stem.jpg"
+        "image": "/images/stem.jpg",
+        "linkUrl": "/shop/stems"
     },
     {
         "id": 5,
         "category_id": 3,
         "name": "Censor",
         "slug": "censors",
-        "image": "/images/censor.jpg"
+        "image": "/images/censor.jpg",
+        "linkUrl": "/shop/censors"
+    },
+    {
+        "id": 6,
+        "category_id": 1,
+        "name": "Drone",
+        "slug": "drones",
+        "image": "/images/drones/b-1.jpg",
+        "linkUrl": "/shop/drones"
+    },
+    {
+        "id": 7,
+        "category_id": 1,
+        "name": "Drone",
+        "slug": "drones",
+        "image": "/images/drones/b-2.jpg",
+        "linkUrl": "/shop/drones"
     }
+    ,
+    {
+        "id": 8,
+        "category_id": 2,
+        "name": "Battery",
+        "slug": "batteries",
+        "image": "/images/batery2.png",
+        "linkUrl": "shop/batteries"
+    },
+    {
+        "id": 13,
+        "category_id": 5,
+        "name": "Drone-kits",
+        "slug": "drone-kits",
+        "image": "/images/boardss/b-3.jpg",
+        "linkUrl": "/shop/drone-kits"
+    },
+    {
+        "id": 9,
+        "category_id": 4,
+        "name": "Stem",
+        "slug": "stems",
+        "image": "/images/stem.jpg",
+        "linkUrl": "/shop/stems"
+    },
+    {
+        "id": 10,
+        "category_id": 3,
+        "name": "Censor",
+        "slug": "censors",
+        "image": "/images/censors/c-1.jpg",
+        "linkUrl": "/shop/censors"
+    },
+    {
+        "id": 11,
+        "category_id": 5,
+        "name": "Drone-kits",
+        "slug": "drone-kits",
+        "image": "/images/boardss/b-1.jpg",
+        "linkUrl": "/shop/drone-kits"
+    },
+    {
+        "id": 12,
+        "category_id": 5,
+        "name": "Drone-kits",
+        "slug": "drone-kits",
+        "image": "/images/boardss/b-2.jpg",
+        "linkUrl": "/shop/drone-kits"
+    },
+    {
+        "id": 14,
+        "category_id": 6,
+        "name": "Boards",
+        "slug": "boards",
+        "image": "/images/board/board-1.jpg",
+        "linkUrl": "/shop/boards"
+    },
+    {
+        "id": 15,
+        "category_id": 6,
+        "name": "Boards",
+        "slug": "boards",
+        "image": "/images/board/board-2.jpg",
+        "linkUrl": "/shop/boards"
+    }
+
 ]

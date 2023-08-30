@@ -33,11 +33,12 @@ const Banner = () => {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         pauseOnHover: true,
+        centerPadding: "60px",
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
       };
@@ -59,23 +60,23 @@ const Banner = () => {
             
                 <Slider {...settings}>
                     <div>
-                        <Image src={censor} alt='image' className='img-fluid'/>
+                        <Image src={censor} alt='image' className='img-fluid banner--img'/>
                     </div>
                     <div>
-                        <Image src={drone1} alt='image' className='img-fluid'/>
+                        <Image src={drone1} alt='image' className='img-fluid banner--img'/>
             
                     </div>
                     <div>
-                    <Image src={battery2} alt='image' className='img-fluid'/>
+                    <Image src={battery2} alt='image' className='img-fluid banner--img'/>
                     </div>
                     <div>
-                    <Image src={dronekit2} alt='image' className='img-fluid'/>
+                    <Image src={dronekit2} alt='image' className='img-fluid banner--img'/>
                     </div>
                     <div>
-                    <Image src={drone2 }  alt='image'className='img-fluid'/>
+                    <Image src={drone2 }  alt='image'className='img-fluid banner--img'/>
                     </div>
                     <div>
-                    <Image src={battery} alt='image' className='img-fluid'/>
+                    <Image src={battery} alt='image' className='img-fluid banner--img'/>
                     </div>
                 </Slider>
                 </div>

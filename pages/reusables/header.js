@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import logo from '../../public/images/logo4-removebg-preview.png'
 import Link from 'next/link';
+import Toolbar from './toolbar';
 
 function Header() {
   return (
@@ -45,10 +46,10 @@ function Header() {
             <div className="collapse navbar-collapse" id="navbarText2">
             <ul className="navbar-nav header__menu me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                <Link className="nav-link active header__menu--link" aria-current="page" href="#">Home</Link>
+                <Link className="nav-link active header__menu--link" aria-current="page" href="/">Home</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link header__menu--link mx-3" href="#">Shop</Link>
+                <Link className="nav-link header__menu--link mx-3" href="/shop">Shop</Link>
                 </li>
                 <li className="nav-item">
                 <Link className="nav-link header__menu--link mx-3" href="#">Basket</Link>
@@ -64,7 +65,7 @@ function Header() {
             </div>
         </div>
         </nav>
-   
+    <Toolbar />
     </>
   );
 }

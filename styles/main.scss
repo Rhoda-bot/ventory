@@ -14,46 +14,26 @@
 
 
 
-.video-background-holder {
-    position: relative;
-   background-color: black;
-   height: calc(100vh - 72px);
-   min-height: 25rem;
-   width: 100%;
-   overflow: hidden;
-  } 
-   
-  
-  
-  .video-background-holder video  {
-  position: absolute;
-   top: 50%;
-   left: 50%;
-   min-width: 100%;
-   min-height: 100%;
-   width: auto;
-   height: auto;
-   z-index: 0;
-   -ms-transform: translateX(-50%) translateY(-50%);
-   -moz-transform: translateX(-50%) translateY(-50%);
-   -webkit-transform: translateX(-50%) translateY(-50%);
-   transform: translateX(-50%) translateY(-50%);
-  } 
-   
-  
-  .video-background-content {
-    position: relative;
-    z-index: 2;
+  a{
+    text-decoration: none;
   }
-    
-  
-  .video-background-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
+  .dropdown-menu {
+    animation: growDown 300ms ease-in-out ;
+    transform-origin: center;
+    width: fit-content;
+    // transition: all 0.4s ease-in-out;
+  }
+  .dropdown-item{
+    font-weight: 400;
+    &:hover{
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+  }
+
+  .dropdown--btn{
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: 2px solid $secondary-color;
+    padding: .7rem;
   }
