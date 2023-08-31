@@ -12,7 +12,7 @@ const ShopItems = () => {
     const [allProducts] = useState(productData);
     // console.log(shopPath);
 
-    const filteredProducts = allProducts.filter(({ slug }) => slug === shopPath[0]);
+    const filteredProducts = allProducts.filter(({ slug }) => slug === shopPath?.length < 1 ? shopPath : shopPath[0]); ///
     return(
         <>
             <Header />
