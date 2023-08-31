@@ -5,7 +5,9 @@
         "name": "Drone",
         "slug": "drones",
         "image": "/images/drone1.jpg",
-        "linkUrl": "/shop/drones"
+        "linkUrl": "/shop/drones",
+        "description": "lorem ipsum",
+        "price": "$1000"
     },
     {
         "id": 2,
@@ -13,7 +15,8 @@
         "name": "Drone",
         "slug": "drones",
         "image": "/images/drone2.jpg",
-        "linkUrl": "/shop/drones"
+        "linkUrl": "/shop/drones",
+        "description":"lorem ipsum"
     }
     ,
     {
@@ -22,7 +25,8 @@
         "name": "Battery",
         "slug": "batteries",
         "image": "/images/batery2.png",
-        "linkUrl": "shop/batteries"
+        "linkUrl": "shop/batteries",
+        "description":"lorem ipsum"
     },
     {
         "id": 4,
@@ -30,7 +34,8 @@
         "name": "Stem",
         "slug": "stems",
         "image": "/images/stem.jpg",
-        "linkUrl": "/shop/stems"
+        "linkUrl": "/shop/stems",
+        "description":"lorem ipsum"
     },
     {
         "id": 5,
@@ -38,7 +43,8 @@
         "name": "Censor",
         "slug": "censors",
         "image": "/images/censor.jpg",
-        "linkUrl": "/shop/censors"
+        "linkUrl": "/shop/censors",
+        "description":"lorem ipsum"
     },
     {
         "id": 6,
@@ -46,7 +52,8 @@
         "name": "Drone",
         "slug": "drones",
         "image": "/images/drones/b-1.jpg",
-        "linkUrl": "/shop/drones"
+        "linkUrl": "/shop/drones",
+        "description":"lorem ipsum"
     },
     {
         "id": 7,
@@ -54,7 +61,8 @@
         "name": "Drone",
         "slug": "drones",
         "image": "/images/drones/b-2.jpg",
-        "linkUrl": "/shop/drones"
+        "linkUrl": "/shop/drones",
+        "description":"lorem ipsum"
     }
     ,
     {
@@ -63,7 +71,8 @@
         "name": "Battery",
         "slug": "batteries",
         "image": "/images/batery2.png",
-        "linkUrl": "shop/batteries"
+        "linkUrl": "shop/batteries",
+        "description":"lorem ipsum"
     },
     {
         "id": 13,
@@ -71,7 +80,8 @@
         "name": "Drone-kits",
         "slug": "drone-kits",
         "image": "/images/boardss/b-3.jpg",
-        "linkUrl": "/shop/drone-kits"
+        "linkUrl": "/shop/drone-kits",
+        "description":"lorem ipsum"
     },
     {
         "id": 9,
@@ -79,7 +89,8 @@
         "name": "Stem",
         "slug": "stems",
         "image": "/images/stem.jpg",
-        "linkUrl": "/shop/stems"
+        "linkUrl": "/shop/stems",
+        "description":"lorem ipsum"
     },
     {
         "id": 10,
@@ -87,7 +98,8 @@
         "name": "Censor",
         "slug": "censors",
         "image": "/images/censors/c-1.jpg",
-        "linkUrl": "/shop/censors"
+        "linkUrl": "/shop/censors",
+        "description":"lorem ipsum"
     },
     {
         "id": 11,
@@ -95,7 +107,8 @@
         "name": "Drone-kits",
         "slug": "drone-kits",
         "image": "/images/boardss/b-1.jpg",
-        "linkUrl": "/shop/drone-kits"
+        "linkUrl": "/shop/drone-kits",
+        "description":"lorem ipsum"
     },
     {
         "id": 12,
@@ -103,7 +116,8 @@
         "name": "Drone-kits",
         "slug": "drone-kits",
         "image": "/images/boardss/b-2.jpg",
-        "linkUrl": "/shop/drone-kits"
+        "linkUrl": "/shop/drone-kits",
+        "description":"lorem ipsum"
     },
     {
         "id": 14,
@@ -111,7 +125,8 @@
         "name": "Boards",
         "slug": "boards",
         "image": "/images/board/board-1.jpg",
-        "linkUrl": "/shop/boards"
+        "linkUrl": "/shop/boards",
+        "description":"lorem ipsum"
     },
     {
         "id": 15,
@@ -119,7 +134,8 @@
         "name": "Boards",
         "slug": "boards",
         "image": "/images/board/board-2.jpg",
-        "linkUrl": "/shop/boards"
+        "linkUrl": "/shop/boards",
+        "description":"lorem ipsum"
     }
 
 ]
