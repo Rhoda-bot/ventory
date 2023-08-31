@@ -10,9 +10,9 @@ const ShopItems = () => {
     const {shopPath} = router.query || [];
     // console.log("shopPath", shopPath);
     const [allProducts] = useState(productData);
-    // console.log(shopPath);
+    console.log(shopPath[0]);
 
-    const filteredProducts = allProducts.filter(({ slug }) => slug === shopPath?.length < 1 ? shopPath : shopPath[0]); ///
+    const filteredProducts = productData.filter(({ slug }) => slug === shopPath?.length < 1 ? '' : shopPath[0]); ///
     return(
         <>
             <Header />
