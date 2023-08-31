@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "../reusables/header";
-import productData from '../utility/product_list.json'
+import productData from '../../utility/product_list.json'
 import Link from "next/link";
 import Footer from "../reusables/footer";
 
