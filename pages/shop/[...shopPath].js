@@ -7,9 +7,10 @@ import Footer from "../reusables/footer";
 
 const ShopItems = () => {
     const router = useRouter();
-    const {shopPath} = router.query;
+    const {shopPath} = router.query || [];
+    // console.log("shopPath", shopPath);
     const [allProducts] = useState(productData);
-    console.log(shopPath);
+    // console.log(shopPath);
 
     const filteredProducts = allProducts.filter(({ slug }) => slug === shopPath[0]);
     return(
