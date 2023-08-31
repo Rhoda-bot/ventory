@@ -7,10 +7,9 @@ import Footer from "../reusables/footer";
 
 const ShopItems = () => {
     const router = useRouter();
-    const {shopPath} = router.query || [];
+    const {shopPath} = router?.query || [];
     // console.log("shopPath", shopPath);
     const [allPrproductDataoducts] = useState(productData);
-    console.log(shopPath[0]);
 
     const filteredProducts = productData.filter(({ slug }) => slug === shopPath?.length < 1 ? '' : shopPath[0]); ///
     return(
@@ -23,7 +22,7 @@ const ShopItems = () => {
                         {productData?.length === 0 ? (
                             <p>No products found</p>
                         ) :
-                        productData && productData.filter((val) => (val.id == shopPath[1])).map(({id, image, name}) => (
+                        productData && productData.filter((val) => (val.id == shopPath?.length < 1 ? '' : shopPath[1])).map(({id, image, name}) => (
                                 <>
                                     <div className="col-md-7 " key={id}>
                                         <div className="card border-0" style={{
