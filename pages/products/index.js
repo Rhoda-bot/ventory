@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import productData from '../utility/products.json'
-import productListData from '../utility/section_data.json'
+import productData from '../../utility/products.json'
+import productListData from '../../utility/section_data.json'
 import Link  from 'next/link'
 import Footer from '../reusables/footer';
 const Products = () => {

@@ -1,16 +1,17 @@
 import { useRouter } from "next/router";
 import Header from "../reusables/header";
 import { useState } from "react";
-import productData from '../utility/product_list.json'
+import productData from '../../utility/product_list.json'
 import Link from "next/link";
 import Footer from "../reusables/footer";
 
 const ShopItems = () => {
     const router = useRouter();
-    const {shopPathId} = router.query;
+    const {shopPath} = router.query;
     const [allProducts] = useState(productData);
+    console.log(shopPath);
 
-    const filteredProducts = allProducts.filter(({ slug }) => slug === shopPathId[0]);
+    const filteredProducts = allProducts.filter(({ slug }) => slug === shopPath[0]);
     return(
         <>
             <Header />
@@ -21,7 +22,7 @@ const ShopItems = () => {
                         {allProducts.length === 0 ? (
                             <p>No products found</p>
                         ):
-                            allProducts.filter((val) => (val.id == shopPathId[1])).map(({id, image, name}) => (
+                            allProducts.filter((val) => (val.id == shopPath[1])).map(({id, image, name}) => (
                                 <>
                                     <div className="col-md-7 " key={id}>
                                         <div className="card border-0" style={{
@@ -47,7 +48,7 @@ const ShopItems = () => {
                                <>
                                     {filteredProducts.map(({ id, image, name }) => (
                                         <div className="col-sm-6 col-md-3 col-lg-4 p-3" key={id}>
-                                            <Link href={`/shop/${shopPathId[0]}/${id}`}>
+                                            <Link href={`/shop/${shopPath[0]}/${id}`}>
                                                 <div className="card p-2 border-0 products__description">
                                                     <img src={image} className="rounded" alt="image" />
                                                     <div className="">

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Drones",
+        "slug": "drones"
+    },
+    {
+        "id": 2,
+        "name": "Batteries",
+        "slug": "batteries"
+    },
+    {
+        "id": 3,
+        "name": "Censors",
+        "slug": "censors"
+    },
+    {
+        "id": 4,
+        "name": "Stems",
+        "slug": "stems"
+    },
+    {
+        "id": 5,
+        "name": "Drone-kits",
+        "slug": "drone-kits"
+    },
+    {
+        "id": 6,
+        "name": "Boards",
+        "slug": "boards"
+    }
+]
