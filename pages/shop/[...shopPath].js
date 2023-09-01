@@ -1,17 +1,17 @@
 import { useRouter } from "next/router";
 import Header from "../reusables/header";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import productData from '../../utility/product_list.json'
 import Link from "next/link";
 import Footer from "../reusables/footer";
 
 const ShopItems = () => {
-    const router = useRouter();
-    const {shopPath} = router?.query || [];
-    // console.log("shopPath", shopPath);
-    const [allPrproductDataoducts] = useState(productData);
+    const [store, setStore] = useState();
 
-    const filteredProducts = productData.filter(({ slug }) => slug === shopPath?.length < 1 ? '' : shopPath[0]); ///
+    useEffect(() => {
+       setStore(JSON.parse(localStorage.getItem('storeDetails')))
+    }, []);
+    const filteredProducts = productData.filter(({ slug }) => slug === store?.slug); ///
     return(
         <>
             <Header />
@@ -22,7 +22,7 @@ const ShopItems = () => {
                         {productData?.length === 0 ? (
                             <p>No products found</p>
                         ) :
-                        productData && productData.filter((val) => (val.id == shopPath?.length < 1 ? '' : shopPath[1])).map(({id, image, name}) => (
+                        productData && productData.filter((val) => (val.id == store?.id)).map(({id, image, name}) => (
                                 <>
                                     <div className="col-md-7 " key={id}>
                                         <div className="card border-0" style={{
@@ -42,13 +42,13 @@ const ShopItems = () => {
                          <h1>Other Similar Products</h1>
     
                          {
-                            filteredProducts.length === 0 ? (
+                            filteredProducts?.length === 0 ? (
                                 <p>No products found.</p>
                             ) : (
                                <>
-                                    {filteredProducts.map(({ id, image, name }) => (
+                                    {filteredProducts?.map(({ id, image, name }) => (
                                         <div className="col-sm-6 col-md-3 col-lg-4 p-3" key={id}>
-                                            <Link href={`/shop/${shopPath[0]}/${id}`}>
+                                            <Link href={`/shop/${store?.slug}/${id}`}>
                                                 <div className="card p-2 border-0 products__description">
                                                     <img src={image} className="rounded" alt="image" />
                                                     <div className="">

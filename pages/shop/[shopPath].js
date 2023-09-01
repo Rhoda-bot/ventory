@@ -10,6 +10,11 @@ const ShopProducts = () => {
     const router = useRouter();
     const shopPath = router.query.shopPath;
     const [allProducts, setAllProducts] = useState(productData);
+    
+    const handleSaveToLocalStore = (id, slug) => {
+      localStorage.setItem('storeDetails', JSON.stringify({id, slug}));
+      router.push(`/shop/${shopPath}/${id}`);
+    }
 
     return(
         <>
@@ -22,14 +27,14 @@ const ShopProducts = () => {
                             allProducts.filter(({id,slug}) => (slug === shopPath)).map(({id, image, name}) => (
                                 <>
                                     <div className="col-md-3 col-lg-4 p-3" key={id}>
-                                       <Link href={`/shop/${shopPath}/${id}`}>
+                                       <button onClick={() => handleSaveToLocalStore(id, shopPath)}>
                                         <div className="card p-2">
                                              <img src={image} className="rounded" alt="image"/>
                                                 <div className="text-center">
                                             <span>{name}</span>
                                             </div>
                                         </div>
-                                       </Link>
+                                       </button>
                                     </div>
                                 </>
                             ))
