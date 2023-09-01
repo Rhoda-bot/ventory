@@ -27,14 +27,14 @@ const ShopProducts = () => {
                             allProducts.filter(({id,slug}) => (slug === shopPath)).map(({id, image, name}) => (
                                 <>
                                     <div className="col-md-3 col-lg-4 p-3" key={id}>
-                                       <button onClick={() => handleSaveToLocalStore(id, shopPath)}>
+                                       <div onClick={() => handleSaveToLocalStore(id, shopPath)}>
                                         <div className="card p-2">
                                              <img src={image} className="rounded" alt="image"/>
                                                 <div className="text-center">
                                             <span>{name}</span>
                                             </div>
                                         </div>
-                                       </button>
+                                       </div>
                                     </div>
                                 </>
                             ))
