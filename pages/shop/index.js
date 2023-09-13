@@ -12,10 +12,11 @@ const Shop = ( ) => {
             <div className="shop">
                 <div className="container py-3">
                     <div className="row py-3">
-                        {
+                       <div className="products__cards">
+                            {
                                 allProducts && allProducts.map(({id,name,image,linkUrl})=> (
                                     <>
-                                    <div className='col-xs-6 col-sm-6 col-md-3 col-xl-4 p-3' key={id}>
+                                    <div className='p-3' key={id}>
                                         <Link href={linkUrl}>
                                             <div className='card border-0 products__description'>
                                                 <div key={id}>
@@ -32,6 +33,7 @@ const Shop = ( ) => {
                                     </>
                                 ))
                             }
+                       </div>
                     </div>
                 </div>
             </div>

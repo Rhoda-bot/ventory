@@ -21,14 +21,15 @@ const ShopProducts = () => {
         <Header />
             <div className="shop">
                 <div className="container">
-                    <div className="row">
+                    <div className="row py-5">
                      <h3>Product: {shopPath}</h3>
+                    <div className="products__cards">
                          {
                             allProducts.filter(({id,slug}) => (slug === shopPath)).map(({id, image, name}) => (
                                 <>
-                                    <div className="col-md-3 col-lg-4 p-3" key={id}>
+                                    <div className=" p-3" key={id}>
                                        <div onClick={() => handleSaveToLocalStore(id, shopPath)}>
-                                        <div className="card p-2">
+                                        <div className="card p-2 border-0 products__description">
                                              <img src={image} className="rounded" alt="image"/>
                                                 <div className="text-center">
                                             <span>{name}</span>
@@ -39,6 +40,7 @@ const ShopProducts = () => {
                                 </>
                             ))
                          }
+                    </div>
                     </div>
                 </div>
             </div>

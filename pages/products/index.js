@@ -3,6 +3,7 @@ import productData from '../../utility/products.json'
 import productListData from '../../utility/section_data.json'
 import Link  from 'next/link'
 import Footer from '../reusables/footer';
+import Image from 'next/image';
 const Products = () => {
 
     const [products, setProducts] = useState(productData);
@@ -24,7 +25,7 @@ const Products = () => {
                     <div className="row">
                         <h1 className='products--title'>Featured Products</h1>
                         <ul className='nav justify-content-center products__menu'>
-                            <li className=' nav-item mx-3'>
+                            <li className=' nav-item  mx-lg-3'>
                                <button onClick={ handleShowAllProducts } className='nav-link products__menu--link'>All</button>
                             </li>
                         {
@@ -37,15 +38,16 @@ const Products = () => {
                             ))
                         }
                         </ul>
-                      <div className='row'>
+                      <div className="row">
+                      <div className='products__cards'>
                             {
                                 allProducts && allProducts.map(({id,title,imageUrl,linkUrl})=> (
                                     <>
-                                    <div className=' col-md-3 col-lg-4 p-3' key={id}>
+                                    <div className='p-3' key={id}>
                                         <Link href={linkUrl}>
                                             <div className='card border-0 products__description'>
                                                 <div key={id}>
-                                                    <img src={imageUrl} className='img-fluid' alt='image'/>
+                                                    <Image src={imageUrl} className='img-fluid' alt='image' width={300} height={300}/>
                                                     <div className='card-body products__description--text'>
                             
                                                         <h3>{title}</h3>
@@ -58,6 +60,7 @@ const Products = () => {
                                     </>
                                 ))
                             }
+                      </div>
                       </div>
                     </div>
                 </div>

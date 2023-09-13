@@ -6,6 +6,7 @@ import Link from "next/link";
 import Footer from "../reusables/footer";
 
 const ShopItems = () => {
+    const router = useRouter();
     const [store, setStore] = useState();
 
     useEffect(() => {
@@ -38,8 +39,9 @@ const ShopItems = () => {
                             <h3> Description</h3>
                          </div>
                     </div>
-                    <div className="row mt-4  py-5">
-                         <h1>Other Similar Products</h1>
+                   <div className="row">
+                         <h1 className="mt-4 text-center">Other Similar Products</h1>
+                   <div className="products__cards mt-4  py-3">
     
                          {
                             filteredProducts?.length === 0 ? (
@@ -47,7 +49,7 @@ const ShopItems = () => {
                             ) : (
                                <>
                                     {filteredProducts?.map(({ id, image, name }) => (
-                                        <div className="col-sm-6 col-md-3 col-lg-4 p-3" key={id}>
+                                        <div className=" p-3" key={id}>
                                             <Link href={`/shop/${store?.slug}/${id}`}>
                                                 <div className="card p-2 border-0 products__description">
                                                     <img src={image} className="rounded" alt="image" />
@@ -62,6 +64,7 @@ const ShopItems = () => {
                             )
                          }
                     </div>
+                   </div>
                 </div>
             </div>
             <Footer />
