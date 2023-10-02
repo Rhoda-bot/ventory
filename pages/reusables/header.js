@@ -49,7 +49,7 @@ function Header() {
                 <Link className="nav-link active header__menu--link" aria-current="page" href="/">Home</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link header__menu--link mx-3" href="/shop">Shop</Link>
+                <Link className="nav-link header__menu--link mx-3" href="/collections">Catalog</Link>
                 </li>
                 <li className="nav-item">
                 <Link className="nav-link header__menu--link mx-3" href="#">Basket</Link>

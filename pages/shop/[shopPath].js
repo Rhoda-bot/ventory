@@ -1,9 +1,7 @@
 import Header from "../reusables/header";
-import Toolbar from "../reusables/toolbar";
 import { useRouter } from "next/router";
 import productData from '../../utility/product_list.json'
 import { useState } from "react";
-import Link from "next/link";
 import Footer from "../reusables/footer";
 
 const ShopProducts = () => {

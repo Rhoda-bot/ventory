@@ -5,9 +5,10 @@
         "name": "Drone",
         "slug": "drones",
         "image": "/images/drone1.jpg",
-        "linkUrl": "/shop/drones",
+        "linkUrl": "/collections/drones",
         "description": "lorem ipsum",
-        "price": "$1000"
+        "price": "1000",
+        "available": "true"
     },
     {
         "id": 2,
@@ -15,8 +16,10 @@
         "name": "Drone",
         "slug": "drones",
         "image": "/images/drone2.jpg",
-        "linkUrl": "/shop/drones",
-        "description":"lorem ipsum"
+        "linkUrl": "/collections/drones",
+        "description":"lorem ipsum",
+        "price": "4000",
+        "available": "false"
     }
     ,
     {
@@ -26,7 +29,9 @@
         "slug": "batteries",
         "image": "/images/batery2.png",
         "linkUrl": "shop/batteries",
-        "description":"lorem ipsum"
+        "description":"lorem ipsum",
+        "price": "1000",
+        "available":"false"
     },
     {
         "id": 4,
@@ -34,8 +39,10 @@
         "name": "Stem",
         "slug": "stems",
         "image": "/images/stem.jpg",
-        "linkUrl": "/shop/stems",
-        "description":"lorem ipsum"
+        "linkUrl": "/collections/stems",
+        "description":"lorem ipsum",
+        "price": "2000",
+        "available":"true"
     },
     {
         "id": 5,
@@ -43,8 +50,10 @@
         "name": "Censor",
         "slug": "censors",
         "image": "/images/censor.jpg",
-        "linkUrl": "/shop/censors",
-        "description":"lorem ipsum"
+        "linkUrl": "/collections/censors",
+        "description":"lorem ipsum",
+        "price": "3000",
+        "available":"true"
     },
     {
         "id": 6,
@@ -52,8 +61,10 @@
         "name": "Drone",
         "slug": "drones",
         "image": "/images/drones/b-1.jpg",
-        "linkUrl": "/shop/drones",
-        "description":"lorem ipsum"
+        "linkUrl": "/collections/drones",
+        "description":"lorem ipsum",
+        "price": "1000",
+        "available":"false"
     },
     {
         "id": 7,
@@ -61,8 +72,10 @@
         "name": "Drone",
         "slug": "drones",
         "image": "/images/drones/b-2.jpg",
-        "linkUrl": "/shop/drones",
-        "description":"lorem ipsum"
+        "linkUrl": "/collections/drones",
+        "description":"lorem ipsum",
+        "price": "400",
+        "available":"true"
     }
     ,
     {
@@ -71,17 +84,21 @@
         "name": "Battery",
         "slug": "batteries",
         "image": "/images/batery2.png",
-        "linkUrl": "shop/batteries",
-        "description":"lorem ipsum"
+        "linkUrl": "/collections/batteries",
+        "description":"lorem ipsum",
+        "price": "1000",
+        "available":"false"
     },
     {
         "id": 13,
         "category_id": 5,
-        "name": "Drone-kits",
+        "name": "Drone kit",
         "slug": "drone-kits",
         "image": "/images/boardss/b-3.jpg",
-        "linkUrl": "/shop/drone-kits",
-        "description":"lorem ipsum"
+        "linkUrl": "/collections/drone-kits",
+        "description":"lorem ipsum",
+        "price": "1000",
+        "available":"false"
     },
     {
         "id": 9,
@@ -89,8 +106,10 @@
         "name": "Stem",
         "slug": "stems",
         "image": "/images/stem.jpg",
-        "linkUrl": "/shop/stems",
-        "description":"lorem ipsum"
+        "linkUrl": "/collections/stems",
+        "description":"lorem ipsum",
+        "price": "100",
+        "available":"true"
     },
     {
         "id": 10,
@@ -98,44 +117,54 @@
         "name": "Censor",
         "slug": "censors",
         "image": "/images/censors/c-1.jpg",
-        "linkUrl": "/shop/censors",
-        "description":"lorem ipsum"
+        "linkUrl": "/collections/censors",
+        "description":"lorem ipsum",
+        "price": "200",
+        "available":"true"
     },
     {
         "id": 11,
         "category_id": 5,
-        "name": "Drone-kits",
+        "name": "Drone kit",
         "slug": "drone-kits",
         "image": "/images/boardss/b-1.jpg",
-        "linkUrl": "/shop/drone-kits",
-        "description":"lorem ipsum"
+        "linkUrl": "/collections/drone-kits",
+        "description":"lorem ipsum",
+        "price": "8000",
+        "available":"true"
     },
     {
         "id": 12,
         "category_id": 5,
-        "name": "Drone-kits",
+        "name": "Drone kit",
         "slug": "drone-kits",
         "image": "/images/boardss/b-2.jpg",
-        "linkUrl": "/shop/drone-kits",
-        "description":"lorem ipsum"
+        "linkUrl": "/collections/drone-kits",
+        "description":"lorem ipsum",
+        "price": "500",
+        "available":"false"
     },
     {
         "id": 14,
         "category_id": 6,
-        "name": "Boards",
+        "name": "Board ",
         "slug": "boards",
         "image": "/images/board/board-1.jpg",
-        "linkUrl": "/shop/boards",
-        "description":"lorem ipsum"
+        "linkUrl": "/collections/boards",
+        "description":"lorem ipsum",
+        "price": "2000",
+        "available":"false"
     },
     {
         "id": 15,
         "category_id": 6,
-        "name": "Boards",
+        "name": "Board",
         "slug": "boards",
         "image": "/images/board/board-2.jpg",
-        "linkUrl": "/shop/boards",
-        "description":"lorem ipsum"
+        "linkUrl": "/collections/boards",
+        "description":"lorem ipsum",
+        "price": "600",
+        "available":"true"
     }
 
 ]

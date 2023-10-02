@@ -8,11 +8,16 @@ import Footer from "../reusables/footer";
 const ShopItems = () => {
     const router = useRouter();
     const [store, setStore] = useState();
-
+    const {shopPath} = router.query;
+    const [filteredProduct, setFilteredProducts] = useState();
     useEffect(() => {
        setStore(JSON.parse(localStorage.getItem('storeDetails')))
-    }, []);
-    const filteredProducts = productData.filter(({ slug }) => slug === store?.slug); ///
+       if (router.isReady) {
+           const filteredProduct = productData.filter(({slug}) => slug === shopPath[0]); 
+           setFilteredProducts(filteredProduct)
+        }
+}, []);
+const filteredProducts = productData.filter(({ slug }) => slug === store?.slug); ///
     return(
         <>
             <Header />
@@ -23,21 +28,28 @@ const ShopItems = () => {
                         {productData?.length === 0 ? (
                             <p>No products found</p>
                         ) :
-                        productData && productData.filter((val) => (val.id == store?.id)).map(({id, image, name}) => (
+                        productData && productData.filter((val) => (val.id === store?.id)).map(({id, image, name, price}) => (
+                            
                                 <>
+                            
                                     <div className="col-md-7 " key={id}>
                                         <div className="card border-0" style={{
                                             boxShadow: 'rgba(0, 0, 0, 0.09) 0px 3px 12px'
                                         }}>
-                                            <img src={image} className="img-fluid rounded"/>
+                                            <img src={image} className="img-fluid rounded" />
                                         </div>
+                                    </div>
+                                    <div className="col-md-4 mx-3">
+                                        <h3 className="display-6 mb-4"> Description: {name}</h3>
+                                        <div className="mb-2">₦ {price}.00 NGN</div>
+                                        <small style={{
+                                            color: 'gray'
+                                        }}>Tax included. Shipping calculated at checkout.</small>
+
                                     </div>
                                 </>
                             ))
                          }
-                         <div className="col-md-5">
-                            <h3> Description</h3>
-                         </div>
                     </div>
                    <div className="row">
                          <h1 className="mt-4 text-center">Other Similar Products</h1>
@@ -48,13 +60,13 @@ const ShopItems = () => {
                                 <p>No products found.</p>
                             ) : (
                                <>
-                                    {filteredProducts?.map(({ id, image, name }) => (
+                                    {filteredProducts?.map(({ id, image, price }) => (
                                         <div className=" p-3" key={id}>
                                             <Link href={`/shop/${store?.slug}/${id}`}>
                                                 <div className="card p-2 border-0 products__description">
                                                     <img src={image} className="rounded" alt="image" />
                                                     <div className="">
-                                                        <span>Price: $00</span>
+                                                        <span>Price:  <b>₦{price}</b></span>
                                                     </div>
                                                 </div>
                                             </Link>
