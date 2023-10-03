@@ -10,7 +10,10 @@ const CollectionItem = () => {
     const path = router.query.collectionPath;
     const [allCollections, setAllCollections] = useState(productData);
    const fil = allCollections.filter((val) => val.slug === path);
-   console.log(fil);
+   if (fil.length === 0) {
+    return <p>No product found <Link href="/">Return to home</Link></p>;
+    
+  }
     return(
         <>
         <Header />

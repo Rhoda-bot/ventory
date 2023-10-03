@@ -13,11 +13,11 @@ const Toolbar = () => {
                         </button>
                         <ul className="dropdown-menu rounded-0 w-100">
                             <li><Link className="dropdown-item" href="/">All Products</Link></li>
-                            <li><Link className="dropdown-item" href="/shop/drones">Drones</Link></li>
-                            <li><Link className="dropdown-item" href="/shop/stems">Stems</Link></li>
-                            <li><Link className="dropdown-item" href="/shop/drone-kits">Drone kits</Link></li>
-                            <li><Link className="dropdown-item" href="/shop/batteries">Batteries</Link></li>
-                            <li><Link className="dropdown-item" href="/shop/power-supply">Power supply</Link></li>
+                            <li><Link className="dropdown-item" href="/collections/drones">Drones</Link></li>
+                            <li><Link className="dropdown-item" href="/collections/stems">Stems</Link></li>
+                            <li><Link className="dropdown-item" href="/collections/drone-kits">Drone kits</Link></li>
+                            <li><Link className="dropdown-item" href="/collections/batteries">Batteries</Link></li>
+                            <li><Link className="dropdown-item" href="/collections/power-supply">Power supply</Link></li>
                         </ul>
                         </div>
                         </div>

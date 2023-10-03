@@ -28,7 +28,7 @@
         "name": "Battery",
         "slug": "batteries",
         "image": "/images/batery2.png",
-        "linkUrl": "shop/batteries",
+        "linkUrl": "/collections/batteries",
         "description":"lorem ipsum",
         "price": "1000",
         "available":"false"
